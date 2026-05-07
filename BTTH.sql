@@ -8,7 +8,6 @@ DELIMITER //
 
 CREATE PROCEDURE ProcessPrescription(IN p_patient_id INT,IN p_medicine_id INT,IN p_quantity INT,IN p_discount_code VARCHAR(50),OUT p_message VARCHAR(255))
 BEGIN
-    -- Biến cục bộ
     DECLARE v_price DECIMAL(18,2);
     DECLARE v_stock INT;
     DECLARE v_total DECIMAL(18,2);
